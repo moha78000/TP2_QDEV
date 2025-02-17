@@ -1,3 +1,5 @@
+import classes.Date;
+
 public class Planning {
   private Reservation[] chTabReservations; // tableau = liste de taille fixe
   private final int TAILLE;
