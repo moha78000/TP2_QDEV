@@ -1,3 +1,5 @@
+package classes;
+
 public class Date {
   protected int chJour;
   protected int chMois;
@@ -19,6 +21,8 @@ public class Date {
   public static boolean estBissextile(int parA) {
     return parA%4==0 && (parA%100!=0) || (parA%400==0);
   }
+
+
   public static int dernierJourDuMois ( int parM , int parA){
     switch (parM) {  // prend le parM est vérifier sa valeur
       case 2: if (estBissextile(parA))
@@ -28,6 +32,10 @@ public class Date {
       default: return 31;
     }
 
+  }
+
+  public int getYear(){
+    return chAnnee;
   }
 
   public boolean estValide() {
@@ -69,6 +77,9 @@ public class Date {
     return 0;
 
 
+  }
+  public int getMonth(){
+    return chMois;
   }
 
 }
