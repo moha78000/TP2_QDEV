@@ -1,3 +1,5 @@
+import classes.Date;
+
 public class Reservation {
   private Date chDate;
   private PlageHoraire chPlageHoraire;
