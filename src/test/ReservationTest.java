@@ -35,5 +35,12 @@ class ReservationTest {
 
     @Test
     void getDate() {
+
+        Date date1 = new Date(15, 3, 2025);
+        PlageHoraire plageHoraire1 = new PlageHoraire(new Horaire(10,0) , new Horaire(12,0));
+        Reservation res = new Reservation(date1,plageHoraire1, "Réunion");
+
+        assertEquals(date1, res.getDate());
+
     }
 }
