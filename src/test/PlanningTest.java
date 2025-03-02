@@ -28,8 +28,4 @@ class PlanningTest {
         assertEquals(res, planning.getReservation(new Date(15, 3, 2025)));
         assertNull(planning.getReservation(new Date(16, 3, 2025)));
     }
-
-    @Test
-    void getReservations() {
-    }
 }
