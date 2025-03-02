@@ -9,6 +9,9 @@ class DateTest {
 
     @org.junit.jupiter.api.Test
     void estBissextile() {
+        Date date = new Date(10,12,2024);
+        int annee_date = date.getYear();
+        assertTrue(date.estBissextile(annee_date));
     }
 
     @org.junit.jupiter.api.Test
@@ -21,11 +24,19 @@ class DateTest {
 
     @org.junit.jupiter.api.Test
     void estValide() {
-        Date date1 = new Date(2012, 12,24);
-        Date date2 = new Date(2014,2,34);
+        Date date1 = new Date(20, 12,2024);
+        Date date2 = new Date(20,2,2034);
+        assertTrue(date1.estValide());
+        assertTrue(date2.estValide());
     }
 
     @org.junit.jupiter.api.Test
     void compareTo() {
+        Date date1 = new Date(20, 12,2024);
+        Date date2 = new Date(20,2,2014);
+        assertFalse(date1.compareTo(date2) == 0);
+
+        Date date3 = new Date(20, 12,2024);
+        assertTrue(date1.compareTo(date3) == 0);
     }
 }
