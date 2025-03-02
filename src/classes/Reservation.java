@@ -1,4 +1,4 @@
-import classes.Date;
+package classes;
 
 public class Reservation {
   private Date chDate;

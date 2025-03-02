@@ -1,4 +1,4 @@
-import classes.Date;
+package classes;
 
 public class Planning {
   private Reservation[] chTabReservations; // tableau = liste de taille fixe
@@ -56,7 +56,7 @@ public class Planning {
     return null;
   }
 
-  public Reservation [] getReservations(Date parDate) {
+  public Reservation[] getReservations(Date parDate) {
 
     Reservation[] tabReservations = new Reservation[TAILLE];
     int nbReservations = 0;

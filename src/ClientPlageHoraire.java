@@ -1,3 +1,6 @@
+import classes.Horaire;
+import classes.PlageHoraire;
+
 public class ClientPlageHoraire {
   public static void main (String [] args){
     Horaire horairedebut = new Horaire(10,0);
