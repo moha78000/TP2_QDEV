@@ -8,13 +8,13 @@ package classes;
  */
 public class Date {
   /** Le jour de la date. */
-  protected int chJour;
+  public int chJour;
 
   /** Le mois de la date. */
-  protected int chMois;
+  public int chMois;
 
   /** L'année de la date. */
-  protected int chAnnee;
+  public int chAnnee;
 
   /**
    * Constructeur par défaut qui initialise une date sans valeur spécifique.
